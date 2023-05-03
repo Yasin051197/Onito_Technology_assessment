@@ -3,7 +3,7 @@ import Navbar from './Navbar'
 import {Heading}from "@chakra-ui/react"
 import axios from 'axios'
 import { useState } from 'react'
-import "./Allusers.css"
+import "../Css/Allusers.css"
 
 const getData=async()=>{
     return await axios.get('https://onito-technology-server.onrender.com/users')
