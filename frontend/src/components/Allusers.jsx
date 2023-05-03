@@ -6,12 +6,14 @@ import { useState } from 'react'
 import "../Css/Allusers.css"
 
 const getData=async()=>{
-    return await axios.get('https://onito-technology-server.onrender.com/users')
+    return await axios.get(`https://onito-technology-server.onrender.com/users`)
 }
 
 
 const Allusers = () => {
     const [users,setUsers]=useState([])
+    const handleChange=(e)=>{
+    }
     useEffect(()=>{
         getData().then((res)=>setUsers(res.data))
     })
@@ -20,6 +22,12 @@ const Allusers = () => {
         <Navbar />
         <Heading>Allusers</Heading>
         <div id="users_container">
+            <select id="limit" onSubmit={handleChange}>
+                    <option >limit</option>
+                    <option value={1}>1</option>
+                    <option value={2}>2</option>
+                    <option value={3}>3</option>
+            </select>
         <table id="table" style={{width:"100%"}}>
             <tr>
                <th>Name</th>
