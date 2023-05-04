@@ -5,3 +5,6 @@ table,tr,th,td{
     width: 90%;
     margin: auto;
 }
+select{
+    padding: 5px 30px;
+}
