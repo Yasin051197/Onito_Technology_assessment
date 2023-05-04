@@ -8,3 +8,11 @@ table,tr,th,td{
 select{
     padding: 5px 30px;
 }
+@media only screen and (max-width: 700px)  {
+    #sort_filter{
+        display: grid;
+    }
+    select{
+        padding: none;
+    }
+}

@@ -42,7 +42,7 @@ const Allusers = () => {
         <Navbar />
         <Heading>Allusers</Heading>
         <div id="users_container">
-            <Box m={'auto'} w={'90%'} display={'flex'} justifyContent={'space-evenly'}>
+            <Box id="sort_filter" m={'auto'} w={'90%'} display={'flex'} justifyContent={'space-evenly'}>
             <select id="limit" onChange={handleChange}>
                     <option >limit</option>
                     <option value='1'>1</option>
